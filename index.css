@@ -1,0 +1,72 @@
+html {
+  background-color: #ccbb99;
+}
+
+body {
+  background-color: #1c1c1c;
+  margin: 50px 60px;
+  padding: 10px;
+  font-size: 16pt;
+  font-family: 'VT323', monospace;
+  color:#ff9500;
+  overflow: hidden;
+}
+
+pre {
+  font-size: 9pt;
+  text-align: center;
+}
+
+nav{
+  background-color: #ff9500;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+a{
+  font-family: 'VT323', monospace;
+  text-decoration: none;
+  color:#1c1c1c;
+  margin: 0px 20px;
+}
+
+h1 {
+  margin: 50px 0px 15px 0px;
+}
+
+h1 + p{
+  margin: 0px;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 800px;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+#cursor::after {
+  background: #ff9500;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  animation: cursor-blink 0.3s steps(10) infinite alternate;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #ff9500;
+}
